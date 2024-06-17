@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Gallery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Montserrat", sans-serif}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 13px}
+.w3-sidebar {
+      width: 10%; /* Adjust the width as desired */
+    }
+    
+html{
+  
+  scroll-behavior: smooth;
+  background-color: #020018;
+  color: white;
+  text-align: center;
+}
+.home {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20vh; /* Adjust the height as needed */
+    }
+    #home1 {
+      text-align: center;
+      background-color: #000000;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    #about1 {
+      text-align: center;
+      background-color: #000000;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      margin: 10px 0;
+    }
+    
+    
+    /* Style for the menu bar */
+    .menu-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      
+    }
+    
+    .w3-button.w3-xxlarge.w3-white {
+      cursor: pointer;
+    }
+    .explore-button {
+      margin: 10px;
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #f49f27;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      
+    }
+    .explore-button:hover {
+      background-color: #f49f27;
+      transform: scale(1.2) translateY(10px);
+      transition: .4s;
+    }
+    .dot-line {
+      border-top: 2px dotted #ccc;
+      margin: 20px auto; /* Center the dotted line */
+      width: 80%; /* Adjust the width of the line */
+    }
+    
+    
+    @media (max-width: 768px) {
+      .explore-button {
+        padding: 10px 20px;
+        font-size: 16px;
+      }
+    }
+   
+</style>
+</head>
+<body>
+  <div class="w3-content" style="max-width: 1500px">
+    <nav class="w3-sidebar w3-white w3-animate-top w3-xlarge" style="display:none; padding-top: 25px; position: absolute; top: 0; right: 0; height: 70%; " id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding: 6px 24px;">
+        <i class="fa fa-remove"></i>
+      </a>
+      <div class="w3-bar-block w3-center" style="height: 100%; display: flex; flex-direction: column; justify-content: center;">
+        <a href="#home" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Home</a>
+        <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+        <a href="#photo" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photographs</a>
+        <a href="#graphic" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Graphics</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Gallery header -->
+    <div class="menu-bar" style="justify-content: center;">
+      <h1><b>My Gallery</b></h1>
+      <span class="w3-button w3-xxlarge w3-black w3-display-topright" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    </div>
+
+    
+    <div class="dot-line"></div>
+<!-- Home Section -->
+<section id="home">
+  <h1><b>Home</b></h1>
+  <br>
+  <div id="home1">
+    <p><b>!! WELCOME TO MY GALLERY !!</b></p>
+    <p>Welcome to my gallery website! Here, I invite you to explore a captivating collection of my photographs and graphic designs, carefully curated to showcase the beauty and creativity captured through my lens and imagination. 
+      Each photograph portrays moments frozen in time, encapsulating emotions, landscapes, and stories waiting to be discovered. Meanwhile, the graphic designs exude artistic finesse, merging colors, shapes, and typography to create captivating visual experiences.
+      Thank you for visiting, and I hope my work leaves an indelible impression upon your heart and mind. <br><b>Enjoy the journey!</b>
+    </p>
+    <br><a href="#photo" class="explore-button">Photographs</a>
+    <a href="#graphic" class="explore-button">Designs</a>
+    <br>
+    <br>
+  </div>
+  <br>
+<br>
+  
+</section>
+<div class="dot-line"></div>
+<section id="about">
+  <h1><b>About</b></h1>
+  <br>
+  <div id="about1">
+    <p><b>Welcome to the "About" section of my gallery website!</b> </p>
+    <p>Photography and graphic design have been an integral part of my life, allowing me to express myself creatively and connect with the world in a unique way.
+
+      In the realm of photography, every click of the shutter captures fleeting moments that narrate tales of joy, sorrow, beauty, and wonder. From mesmerizing landscapes to candid portraits, my lens serves as a window to the diverse emotions and experiences that surround us.
+      Thank you for visiting, and I hope my work leaves an indelible impression upon your heart and mind. Enjoy the journey!
+
+    </p>
+    <p>On the other hand, graphic design allows me to push the boundaries of imagination, blending colors, shapes, and typography to craft visual masterpieces. Each design piece carries a message and a purpose, conveying stories that leave a lasting impact on those who encounter them.</p>
+    <p>Thank you for taking the time to discover the essence of my artistry. It is my sincere hope that my creations resonate with your soul and inspire you to see the world through a different lens—one that celebrates the beauty of life and the boundless possibilities of human expression. <br><b>Enjoy the journey!</b></p>
+    <br><a href="#photo" class="explore-button">Photographs</a>
+    <a href="#graphic" class="explore-button">Designs</a>
+    <br>
+    <br>
+  </div>
+  <br>
+  <br>
+</section>
+<div class="dot-line"></div>
+<!-- Photo Grid -->
+<section class="photo" id="photo">
+  <h1><b>Photographs</b></h1>
+  <header class="w3-center w3-margin-bottom">
+  <p class="w3-padding-16"><button class="w3-button w3-white" onclick="myFunction()" style="background-color: whites;">Toggle Grid Padding</button></p>
+</header>
+  <div class="w3-row" id="myGrid" style="margin-bottom:128px">
+    <div class="w3-third">
+      <img src="img/pic1.jpg" style="width:100%">
+      <img src="img/pic2.jpg" style="width:100%">
+      <img src="img/pic3.jpg" style="width:100%">
+      <img src="img/pic4.jpg" style="width:100%">
+      <img src="img/pic22.jpg" style="width:100%">
+      <img src="img/pic6.jpg" style="width:100%">
+      
+      <img src="img/pic15.jpg" style="width:100%">
+      
+      <img src="img/pic23.jpg" style="width:100%">
+      <img src="img/pic5.jpg" style="width:100%">
+    </div>
+
+    <div class="w3-third">
+      <img src="img/pic10.jpg" style="width:100%">
+      <img src="img/pic19.jpg" style="width:100%">
+      <img src="img/pic11.jpg" style="width:100%">
+      <img src="img/pic12.jpg" style="width:100%">
+      <img src="img/pic13.jpg" style="width:100%">
+      <img src="img/pic24.jpg" style="width:100%">
+      <img src="img/pic27.jpg" style="width:100%">
+      <img src="img/pic26.jpg" style="width:100%">
+      <img src="img/pic9.jpg" style="width:100%">
+    </div>
+
+    <div class="w3-third">
+      <img src="img/pic16.jpg" style="width:100%">
+      <img src="img/pic17.jpg" style="width:100%">
+      <img src="img/pic18.jpg" style="width:100%">
+      <img src="img/pic25.jpg" style="width:100%">
+      <img src="img/pic21.jpg" style="width:100%">
+      <img src="img/pic20.jpg" style="width:100%">
+      
+      <img src="img/pic8.jpg" style="width:100%">
+      
+      <img src="img/pic7.jpg" style="width:100%">
+    </div>
+  </div>
+</section>
+<div class="dot-line"></div>
+<section class="graphic" id="graphic">
+  <h1><b>Designs</b></h1>
+  <header class="w3-center w3-margin-bottom">
+  <p class="w3-padding-16"><button class="w3-button w3-white" onclick="myFunction1()" style="background-color: whites;">Toggle Grid Padding</button></p>
+</header>
+  <div class="w3-row" id="myGrid1" style="margin-bottom:128px">
+    <div class="w3-third">
+      <img src="img/d1 (1).png" style="width:100%">
+      
+      <img src="img/d1 (3).png" style="width:100%">
+      <img src="img/d1 (5).png" style="width:100%">
+    </div>
+
+    <div class="w3-third">
+      
+      <img src="img/d1 (4).png" style="width:100%">
+    </div>
+
+    <div class="w3-third">
+      
+      <img src="img/d1 (2).png" style="width:100%">
+      <img src="img/d1 (6).png" style="width:100%">
+    </div>
+  </div>
+</section>
+
+<div class="dot-line"></div>
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+
+<footer class="w3-container w3-padding-64 w3-black w3-center w3-opacity w3-large" style="margin-top:100px"> 
+  <h2 id="contact" style="justify-content: center; "><b>Contact</b></h2><br>
+  <a href="https://www.facebook.com/profile.php?id=100081151666557&mibextid=ZbWKwL" target="_blank" class="fa fa-facebook-official w3-hover-opacity"></a>
+  <a href="https://www.linkedin.com/in/vasa-vanisri-naga-ratna-tejaswini-845103250/" target="_blank" class="fa fa-linkedin w3-hover-opacity"></a>
+  <a href="https://github.com/20A31A0526" target="_blank" class="fa fa-github w3-hover-opacity"></a>
+    
+</footer>
+ 
+<script>
+// Toggle grid padding
+function myFunction() {
+  var x = document.getElementById("myGrid");
+  if (x.className === "w3-row") {
+    x.className = "w3-row-padding";
+  } else { 
+    x.className = x.className.replace("w3-row-padding", "w3-row");
+  }
+}
+function myFunction1() {
+  var x = document.getElementById("myGrid1");
+  if (x.className === "w3-row") {
+    x.className = "w3-row-padding";
+  } else { 
+    x.className = x.className.replace("w3-row-padding", "w3-row");
+  }
+}
+
+
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "20%";
+  document.getElementById("mySidebar").style.display = "block";
+  // Add an event listener to the entire document to close the sidebar when clicked outside
+  
+}
+
+function w3_close() {
+  var abc = document.getElementById("mySidebar");
+  // Remove the event listener when the sidebar is closed
+  abc.style.display = "none"
+}
+
+
+
+</script>
+
+</body>
+</html>
