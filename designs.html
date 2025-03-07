@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Designs - My Gallery</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="w3-content" style="max-width: 1500px">
+        <div class="menu-bar">
+            <img src="img/logo.png" class="logo">
+            <h1 class="gallery-title"><b>Designs</b></h1>
+            <a href="index.html" class="w3-button w3-xxlarge w3-black menu-icon">
+                <i class="fa fa-home"></i>
+            </a>
+        </div>
+
+        <div class="dot-line"></div>
+
+        <section class="graphic" id="graphic">
+            <!--<h1><b>Designs</b></h1>-->
+            <header class="w3-center w3-margin-bottom">
+                <p class="w3-padding-16">
+                    <button class="w3-button w3-white" onclick="toggleGridPadding()" style="background-color: whites;">
+                        Toggle Grid Padding
+                    </button>
+                </p>
+            </header>
+            <div class="w3-row" id="designGrid" style="margin-bottom:128px">
+                <div class="w3-third">
+                    <img src="img/d1 (2).png" style="width:100%">
+                    <img src="img/d1 (3).png" style="width:100%">
+                    <img src="img/d1 (7).png" style="width:100%">
+                </div>
+                <div class="w3-third">
+                    <img src="img/d1 (4).png" style="width:100%">
+                </div>
+                <div class="w3-third">
+                    <img src="img/d1 (6).png" style="width:100%">
+                </div>
+            </div>
+        </section>
+
+        <div class="dot-line"></div>
+    </div>
+
+    <footer>
+        <h2 id="contact"><b>Contact</b></h2>
+        <a href="mailto:neeharikasrivasa@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/vasa-neeharikasri-81510a253" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/neeharikasri" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </footer>
+
+    <script>
+        function toggleGridPadding() {
+            var x = document.getElementById("designGrid");
+            if (x.className === "w3-row") {
+                x.className = "w3-row-padding";
+            } else { 
+                x.className = x.className.replace("w3-row-padding", "w3-row");
+            }
+        }
+    </script>
+
+</body>
+</html>

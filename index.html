@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Gallery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+  <div class="w3-content" style="max-width: 1500px">
+    <nav class="w3-sidebar w3-white w3-animate-top w3-xlarge" style="display:none; padding-top: 25px; position: absolute; top: 0; right: 0; height: 70%; " id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding: 6px 24px;">
+        <i class="fa fa-remove"></i>
+      </a>
+      <div class="w3-bar-block w3-center" style="height: 100%; display: flex; flex-direction: column; justify-content: center;">
+        <a href="#home" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Home</a>
+        <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+        <a href="photographs.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photographs</a>
+        <a href="designs.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Graphics</a>
+        <a href="drawings.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Drawings</a>
+        <a href="#comment-section" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Comments</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Gallery header -->
+    
+    <div class="menu-bar">
+      <img src="img/logo.png" class="logo">
+      <h1 class="gallery-title"><b>My Gallery</b></h1>
+      <span class="w3-button w3-xxlarge w3-black menu-icon" onclick="w3_open()">
+          <i class="fa fa-bars"></i>
+      </span>
+  </div>
+  
+
+    
+    <div class="dot-line"></div>
+<!-- Home Section -->
+<section id="home">
+  <h1><b>Home</b></h1>
+  <br>
+  <div id="home1">
+    <p><b>!! WELCOME TO MY GALLERY !!</b></p>
+    <br>
+    <p>Welcome to my gallery! Here, you'll find a collection of my favorite photographs, graphic designs, and hand-drawn artworks—each capturing special moments, emotions, and creativity. From breathtaking landscapes to unique designs, every piece tells a story. I hope they inspire you and spark your imagination. <br><b>Enjoy the journey!</b>
+    </p>
+    <br><br>
+    <br><a href="photographs.html" class="explore-button">Photographs</a>
+    <a href="designs.html" class="explore-button">Designs</a>
+    <a href="drawings.html" class="explore-button">Drawings</a>
+    <a href="#comments" class="explore-button">Comments</a>
+    <br>
+    <br>
+  </div>
+  <br>
+<br>
+  
+</section>
+<div class="dot-line"></div>
+<div id="comment-section">
+  <h2>💬 Leave a Comment</h2>
+  <form id="comment-form">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <textarea id="comment" placeholder="Write your comment here..." required></textarea>
+    <button type="submit" id="submit-id">Post Comment</button>
+  </form>
+  <div id="comments-list">
+    <h3>📌 Recent Comments:</h3>
+    <div id="user-comments"></div>
+  </div>
+</div>
+
+<footer>
+  <h2 id="contact"><b>Contact</b></h2>
+  <a href="mailto:neeharikasrivasa@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+  <a href="https://www.linkedin.com/in/vasa-neeharikasri-81510a253" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+  <a href="https://github.com/neeharikasri" target="_blank"><i class="fa-brands fa-github"></i></a>
+</footer>
+ 
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "20%";
+  document.getElementById("mySidebar").style.display = "block";  
+}
+function w3_close() {
+  var abc = document.getElementById("mySidebar");
+  abc.style.display = "none"
+}
+</script>
+<script src="script.js"></script>
+</body>
+</html>

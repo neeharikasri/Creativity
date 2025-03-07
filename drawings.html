@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Photographs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Gallery Header -->
+<div class="w3-content" style="max-width:1500px">
+    
+    <div class="menu-bar">
+        <img src="img/logo.png" class="logo" alt="Logo">
+        <h1 class="gallery-title"><b>Drawings</b></h1>
+        <a href="index.html" class="w3-button w3-xxlarge w3-black menu-icon">
+            <i class="fa fa-home"></i>
+        </a>
+    </div>
+    <div class="dot-line"></div>
+
+    <section class="graphic" id="graphic">
+        <!--<h1><b>Designs</b></h1>-->
+        <header class="w3-center w3-margin-bottom">
+            <p class="w3-padding-16">
+                <button class="w3-button w3-white" onclick="toggleGridPadding()" style="background-color: white;">
+                    Toggle Grid Padding
+                </button>
+            </p>
+        </header>
+
+        <div class="w3-row" id="myGrid2" style="margin-bottom:128px">
+            <div class="w3-third">
+                <img src="img/draw1.jpeg" style="width:100%" alt="Drawing 1">
+                <img src="img/draw2.jpeg" style="width:100%" alt="Drawing 2">
+                <img src="img/draw3.jpeg" style="width:100%" alt="Drawing 3">
+                <img src="img/draw10.jpeg" style="width:100%" alt="Drawing 10">
+                <img src="img/draw11.jpeg" style="width:100%" alt="Drawing 11">
+                <img src="img/draw16.jpeg" style="width:100%" alt="Drawing 16">
+                <img src="img/draw19.jpeg" style="width:100%" alt="Drawing 19">
+            </div>
+            <div class="w3-third">
+                <img src="img/draw4.jpeg" style="width:100%" alt="Drawing 4">
+                <img src="img/draw5.jpeg" style="width:100%" alt="Drawing 5">
+                <img src="img/draw6.jpeg" style="width:100%" alt="Drawing 6">
+                <img src="img/draw12.jpeg" style="width:100%" alt="Drawing 12">
+                <img src="img/draw13.jpeg" style="width:100%" alt="Drawing 13">
+                <img src="img/draw17.jpeg" style="width:100%" alt="Drawing 17">
+            </div>
+            <div class="w3-third">
+                <img src="img/draw7.jpeg" style="width:100%" alt="Drawing 7">
+                <img src="img/draw8.jpeg" style="width:100%" alt="Drawing 8">
+                <img src="img/draw9.jpeg" style="width:100%" alt="Drawing 9">
+                <img src="img/draw14.jpeg" style="width:100%" alt="Drawing 14">
+                <img src="img/draw15.jpeg" style="width:100%" alt="Drawing 15">
+                <img src="img/draw18.jpeg" style="width:100%" alt="Drawing 18">
+            </div>
+        </div> <!-- Closing div for w3-row -->
+    </section> <!-- Correctly closing the section -->
+
+    <div class="dot-line"></div>
+</div>
+
+<footer>
+    <h2 id="contact"><b>Contact</b></h2>
+    <a href="mailto:neeharikasrivasa@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/vasa-neeharikasri-81510a253" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://github.com/neeharikasri" target="_blank"><i class="fa-brands fa-github"></i></a>
+</footer>
+
+<script>
+function toggleGridPadding() {
+    var x = document.getElementById("myGrid2");
+    if (x.classList.contains("w3-row")) {
+        x.classList.remove("w3-row");
+        x.classList.add("w3-row-padding");
+    } else { 
+        x.classList.remove("w3-row-padding");
+        x.classList.add("w3-row");
+    }
+}
+</script>
+
+</body>
+</html>
